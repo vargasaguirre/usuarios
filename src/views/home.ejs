@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <%- include ('partials/head') %>
+    <%- include ('partials/modal') %>
+  </head>
+  <body>
+    <%- include (nav) %>
+    <div class="container">
+      <header class="row">
+        <div class="col-md-12" id="tableUser">
+          <div class="card">
+              <div class="card-header">
+                  <i class="fas fa-users"></i><strong class="card-title"> Usuarios</strong>
+                  <button type="button" class="btn btn-success float-right bg-flat-color-5" data-toggle="modal" data-target="#myModal">
+                      <i class="fa fa-plus mr-2"> Nuevo Usuario</i>
+                  </button>
+              </div>
+              <div class="card-body">
+                  <div class="table-responsive">
+                      <table class="table" id="tblUsuarios">
+                          <thead>
+                              <tr>
+                                  <th scope="col">Nombre</th>
+                                  <th scope="col">Usuario</th>
+                                  <th scope="col">Cargo</th>
+                                  <th scope="col">No.Intentos</th>
+                                  <th scope="col">Edad</th>
+                              </tr>
+                          </thead>
+                      </table>
+                  </div>
+                  <hr>
+              </div>
+          </div>
+      </div>
+      </header>
+    </div>
+    <script src="/javascripts/usuarios.js"></script>
+  </body>
+</html>
